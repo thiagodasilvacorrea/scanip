@@ -14,7 +14,7 @@ metodo :GET
 
 url : http://127.0.0.1:8080/scanip/api/poller/status/{IP}
 
-exemplo : http://127.0.0.1:8080/scanip/api/poller/start/192.168.50.0/28
+exemplo :http://127.0.0.1:8080/scanip/api/poller/status/192.168.50.2
 
 Finalidade: |Retorna as informações  do ip solicitado
 
