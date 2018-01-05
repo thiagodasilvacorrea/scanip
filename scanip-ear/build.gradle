@@ -1,0 +1,24 @@
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(path: ':scanip-war', configuration: 'archives')
+	deploy project(path: ':scanip-ejb')
+
+	earlib project(':scanip-api')
+	earlib project(':scanip-core')
+	earlib project(':scanip-ejb-client')
+}
+
+ear {
+	deploymentDescriptor {
+		def warName = project(':scanip-war').name
+		def warVersion = project(':scanip-war').version
+		def warFileName = warName + "-" + warVersion + ".war"
+		webModule(warFileName, 'scanip')
+
+		def ejbName = project(':scanip-ejb').name
+		def ejbVersion = project(':scanip-ejb').version
+		def ejbFileName = ejbName + "-" + ejbVersion + ".jar"
+		module(ejbFileName, 'ejb')
+	}
+}

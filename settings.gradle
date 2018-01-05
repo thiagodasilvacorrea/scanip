@@ -1,0 +1,1 @@
+include "scanip-ear", "scanip-war", "scanip-api", "scanip-core", "scanip-ejb", "scanip-ejb-client"

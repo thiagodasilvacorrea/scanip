@@ -1,0 +1,5 @@
+
+dependencies {
+	compile project(':scanip-api')
+	compile project(':scanip-ejb-client')
+}
