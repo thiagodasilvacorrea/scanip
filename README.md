@@ -23,7 +23,7 @@ Log no console do wildfly.
 
 Dados do banco e das filas:
 
-O arquivo do banco se encontra na pasta sql na raiz do projeto.
+O arquivo do banco  de nome scanipdb se encontra  na raiz do projeto.
 Basta importar o arquivo novamente no postgresql.
 
 Segue configurações dafila e do connection factory no wildfly 10.
