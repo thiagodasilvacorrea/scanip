@@ -11,7 +11,7 @@ import br.inatel.pos.mobile.scanip.impl.ScanIpServiceImpl;
 
 
 
-@ApplicationPath("/api")
+@ApplicationPath("/app")
 public class RestApplication extends Application {
 
 	@Override

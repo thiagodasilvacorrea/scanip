@@ -3,7 +3,7 @@ package br.inatel.pos.mobile.scanip.iptools;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
-
+// Clase que contem metodos para gera os ips  e realizar o ping
 public  class Iptools 
 {
 	public static boolean execPing(String address) {

@@ -34,7 +34,7 @@ public class ScanIpBean implements ScanIpLocal,ScanIpRemote {
 
 	@Resource(lookup = "java:/jms/queue/scannipqueue")
 	private Queue queue;
-
+   //Retorna status do ip passado na requisicao.
 	@Override
 	public VerifiquedIPTO[] listProducts(String ip) 
 	{
@@ -51,6 +51,7 @@ public class ScanIpBean implements ScanIpLocal,ScanIpRemote {
 				.toArray(new  VerifiquedIPTO[0]);
 	}
 
+	//Gera os ips
 	@Override
 	public void ScanNetwork(String ip, int maskcidr) 
 	{

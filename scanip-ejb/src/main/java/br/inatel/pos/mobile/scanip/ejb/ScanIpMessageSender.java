@@ -20,10 +20,14 @@ public class ScanIpMessageSender
 	@Resource(lookup = "java:/jms/queue/scannipqueue")
 	private Queue queue;
 	
+	//Divide os ips gerados em grupos de 10 e os envia para o mdb.
 	public  void sendObjectMessage(ArrayList<String> objectips)
 	{
+		//recebe  o tamanho da lista recebida.
 		int size = objectips.size();
+		//Lista usada para dividir os ips recebidos
 		ArrayList<String> splitedlist = new ArrayList<>();
+		//valor que define quantos elementos tem em cada grupo.
 	 final int maxsizearray = 10;
 		try (
 				Connection connection = connectionFactory.createConnection();

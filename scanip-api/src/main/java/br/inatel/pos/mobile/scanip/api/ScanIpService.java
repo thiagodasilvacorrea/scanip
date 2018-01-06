@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 
 import br.inatel.pos.mobile.scanip.to.VerifiquedIPTO;
 
-@Path("/poller")
+@Path("/api/poller")
 public interface ScanIpService {
 
 	@GET
