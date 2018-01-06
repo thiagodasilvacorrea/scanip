@@ -2,9 +2,9 @@ Segue dados para utilização da aplicação:
 
 metodo :GET
 
-url : http://127.0.0.1:8080/scanip/api/poller/start/{IP}/{MASK}
+url : http://127.0.0.1:8080/scanip/app/api/poller/start/{IP}/{MASK}
 
-exemplo : http://127.0.0.1:8080/scanip/api/poller/start/192.168.50.0/28
+exemplo : http://127.0.0.1:8080/scanip/app/api/poller/start/192.168.50.0/28
 
 Finalidade: Gera a faixade ip de acordo com o ip informado e a mascara na notação cidr.
 
@@ -12,9 +12,9 @@ Resultados e log no console do wildfly.
 
 metodo :GET
 
-url : http://127.0.0.1:8080/scanip/api/poller/status/{IP}
+url : http://127.0.0.1:8080/scanip/app/api/poller/status/{IP}
 
-exemplo :http://127.0.0.1:8080/scanip/api/poller/status/192.168.50.2
+exemplo :http://127.0.0.1:8080/scanip/app/api/poller/status/192.168.50.2
 
 Finalidade: |Retorna as informações  do ip solicitado
 
@@ -23,7 +23,7 @@ Log no console do wildfly.
 
 Dados do banco e das filas:
 
-O arquivo do banco  de nome scanipdb se encontra  na raiz do projeto.
+O arquivo do banco  de nome scanipdb se encontra  na pasta sql do projeto.
 
 Basta importar o arquivo novamente no postgresql.
 
